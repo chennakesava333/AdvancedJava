@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Registration Page</title>
+<style>
+ body{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ font-family: cursive;
+ flex-direction: column;
+ margin: 0;
+ line-height: 2.0;
+ font-weight: bold;
+ 
+ }
+ 
+ .main1{
+ text-align: center;
+ width:500px;
+ border-radius: 15px;
+ padding: 10px 20px;
+ border-color: black;
+ border: 5px;
+ border-style: solid;
+ }
+ input{
+
+ display: block;
+ border-radius: 10px;
+ text-align:left;
+ font-weight: 600;
+ font-size: small;
+ width:75%;
+ font-style: italic;
+ box-sizing: border-box;
+ margin-bottom: 15px;
+ border-color: black;
+ padding: 10px
+ }
+ lable{
+ display: flex;
+ margin: 0;
+ 
+ }
+ button {
+ display:flex;
+ justify-content:center;
+ margin:0;
+ width:100%;
+ padding: 15px;
+ cursor:pointer;
+ border-radius: 10px;
+ color:white;
+ font-weight: bold;
+ background-color: navy;
+ }
+  .button:hover {
+	background-color:green;
+	color: black;
+	font-weight: bold;
+	
+}
+</style>
+</head>
+<body>
+  <div class="main1">
+    <form action="urs" method="post">
+       <lable for="uname">User Name:</lable>
+       <input type="text" name="uname" placeholder="Enter User Name:" required>
+       <lable for="fname">First Name:</lable>
+        <input type="text" name="fname" placeholder="Enter First Name:" required>
+        <lable for="lname">Last Name:</lable>
+        <input type="text" name="lname" placeholder="Enter Last Name:" required>
+        <lable for="age">age:</lable>
+        <input type="text" name="uage" placeholder="Enter your Age:" required>
+        <lable for="mid">Mail Id:</lable>
+        <input type="text" name="umid" placeholder="Enter Mail Id:" required>
+        <lable for="pnum">Phone Number:</lable>
+        <input type="text" name="upnum" placeholder="Enter Mobile Number:" required>
+        <lable for="pswd">Password:</lable>
+        <input type="password" name="upswd" placeholder="Enter Password:" required>
+         <lable for="cpswd">Confirm Password:</lable>
+        <input type="password" name="ucpswd" placeholder="Enter Confirm Password:" required>
+        
+         <button type="submit" class="button">Register</button>
+    </form>
+    
+  </div>
+</body>
+</html>
